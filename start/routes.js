@@ -17,18 +17,5 @@
 const Route = use('Route');
 
 Route.on('/').render('home');
-Route.get("/login", (context)=>{
-    const {view,request,response} = context
-    const name = "Naratip"
-    const age = 20;
-    const friends= ["new","ko","han"];
-    const address = {
-        postcode:"10104",
-        country: "Thailand" ,
-    };
-    return view.render("login",{name,age,friends,address})
-})
-Route.get("/register", (context)=>{
-    const {view,request,response} = context
-    return view.render("register")
-})
+Route.get("/login", "AuthController.login");
+Route.get("/register", "AuthController.register");
