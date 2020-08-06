@@ -1,23 +1,17 @@
 @layout("layout")
 @section('style-section')
          {{style("CSS/login")}}
-   @endsection 
+@endsection 
 @section("content")
 <div class="container">
-    <span class="hero-text">    
-        Login {{name}}
-    </span>
-    @if(age>=20)
-    <h5> You r adult</h5>
-    @else
-    <h5> You r young </h5>
-    @endif
-    <ul>
-        @each(friend in friends)
-        <li>{{friend}}</li>
-        @endeach
-    </ul>
-    <p> {{address.postcode}}</p>
-<img src="{{assetsUrl('pyramid.png')}}" />
-</div>
+    <form method="POST" action="{{route('/login')}}">
+        {{csrfField()}}
+            <label for="username">username</label>
+            <input type="text" name="password" id="username">
+            <label for="username">username</label >
+            <input type="password" name="password" id="password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 @endsection
+

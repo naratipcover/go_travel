@@ -18,4 +18,5 @@ const Route = use('Route');
 
 Route.on('/').render('home');
 Route.get("/login", "AuthController.login");
+Route.post("/login","AuthController.loginUser")
 Route.get("/register", "AuthController.register");
