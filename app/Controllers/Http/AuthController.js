@@ -24,6 +24,29 @@ class AuthController {
     register = ({view}) => {
         return view.render("register")
     }
+// ....................................................................
+    home ({view,request,response}) {
+        return view.render("home");
+    }
+   
+    comment ({view,request,response}) {
+        return view.render("comment");
+    }
+    post ({view,request,response}) {
+        return view.render("post");
+    }
+    regionNorthern({view,request,response}) {
+        return view.render("regionNorthern");
+    }
+    regionSouthern({view,request,response}) {
+        return view.render("regionSouthern");
+    }
+    regionCentral({view,request,response}) {
+        return view.render("regionCentral");
+    }
+    regionIsaan({view,request,response}) {
+        return view.render("regionIsaan");
+    }
 }
 
 module.exports = AuthController;

@@ -15,8 +15,19 @@
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
-
-Route.on('/').render('home');
+// Route.on('/').render('home');
 Route.get("/login", "AuthController.login");
-Route.post("/login","AuthController.loginUser")
+Route.post("/login","AuthController.loginUser");
 Route.get("/register", "AuthController.register");
+
+Route.get("/home", "AuthController.home");
+Route.get("/comment", "AuthController.comment");
+Route.get("/post", "AuthController.post");
+Route.get("/regionNorthern", "AuthController.regionNorthern");
+Route.get("/regionSouthern", "AuthController.regionSouthern");
+Route.get("/regionCentral", "AuthController.regionCentral");
+Route.get("/regionIsaan", "AuthController.regionIsaan");
+
+
+
+

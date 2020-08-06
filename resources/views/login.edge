@@ -1,6 +1,6 @@
 @layout("layout")
 @section('style-section')
-         {{style("CSS/login")}}
+{{style("CSS/login")}}
 @endsection 
 @section("content")
 <div class="container">
@@ -8,10 +8,11 @@
         {{csrfField()}}
             <label for="username">username</label>
             <input type="text" name="password" id="username">
-            <label for="username">username</label >
+            <label for="username.">username</label >
             <input type="password" name="password" id="password">
             <button type="submit">Submit</button>
         </form>
     </div>
 @endsection
+
 
