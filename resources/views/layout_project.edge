@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="AIzaSyCfvam0Nh2PEf3WFO0vSyxxOLWd9_w1Q2M">
+    <script src="https://apis.google.com/js/platform.js" async defer ></script>
     <title>ชวนมาเที่ยว</title>
    @!section("style-section")
    {{style("CSS/reset")}}
@@ -11,10 +13,17 @@
    {{style("CSS/footer")}}
 </head>
 <body>
-    <nav class="topnav">
+    <nav class="topnav"> 
         <button class="button" href="">สร้างโพส</button>
+        <div class="g-signin2"></div>
     </nav>
     @!section("home")
+    @!section("post")
+    @!section("commit")
+    @!section("regionNorthern")
+    @!section("regionSouthern")
+    @!section("regionCentral")
+    @!section("regionIsaan")
     <footer class="footer">
      <p>project M5</p>
     </footer>
