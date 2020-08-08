@@ -3,7 +3,7 @@ const Database = use("Database");
 class AuthController {
     async login ({view,request,response}) {
         return view.render("login");
-        // const users = await Database.select("*").from("profiles").where({name: "John"})
+        const users = await Database.select("*").from("users")
         // .whereNot({age:20})
         // .whereBetween('age',[18,32]);
         // const name = "Ponlawat";
@@ -13,17 +13,28 @@ class AuthController {
         //     postcode: "10140",
         //     country: "Thailand",
         // }
-        // return view.render("login", { name, age, friends, address })
+        return view.render("login", { users })
     }
     loginUser({view,request,response}){
-        const profile = request.body
-        console.log(profile)
+        const {username,password} =request.body
+        // const profile = request.body
+        // console.log(profile)
         // return view.render("login")
         return response.redirect("/login")
     }
     register = ({view}) => {
         return view.render("register")
     }
+    // async = *
+    async registerUser({request,response}){
+       const{email,password,username} = request.body;
+       await Database.from("users").insert({email,password,username});
+    //    await Database.insert({email,password}).into("users")
+    //    yield
+    //    await = yield 
+       return response.redirect("/login");
+   }
+    
 // ....................................................................
     home ({view,request,response}) {
         return view.render("home");

@@ -5,8 +5,13 @@
 @endsection
 @section("content")
     <div class="container">
-        <span class="big-title">
-            Register
-        </span>
+        <form method="POST" action="{{route('/registerUser')}}">
+            {{csrfField()}} 
+            <div class="text">
+             <input type="text" placeholder="username" name="username">
+               <input type="text" placeholder="email" name="email">
+               <input type="password" placeholder="Password" name="password">
+               <button type="submit">OK</button>
+        </from>
     </div>
-@endsection
+@endsection 

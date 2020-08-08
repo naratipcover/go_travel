@@ -19,6 +19,10 @@ const Route = use('Route');
 Route.get("/login", "AuthController.login");
 Route.post("/login","AuthController.loginUser");
 Route.get("/register", "AuthController.register");
+Route.post("/api/register","AuthController.registerUser");
+Route.post("/register","AuthController.registerUser");
+
+
 
 Route.get("/home", "AuthController.home");
 Route.get("/comment", "AuthController.comment");
