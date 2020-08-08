@@ -1,0 +1,128 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+  background-origin: 5px;
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 7px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.container-image{
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    text-align: center;
+    background: rgb(75, 80, 76);
+    background-image: url(../image/backg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+  }
+.container-image img{
+    position: relative;
+}
+  h1{
+    color: white;
+    font-size: 60px;
+    padding-top: 20vh;
+  }
+
+
+  form.example input[type=text] {
+    margin-top: 10vh;
+    margin-left: 50vh;
+    padding: 10px;
+    font-size: 17px;
+    border: solid 3px #405912 ;
+    float: left;
+    width: 40%;
+    background: white;
+    border-radius: 5px;
+    
+  }
+  
+  form.example button {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10vh;
+    width: 5%;
+    padding: 10px;
+    background: #405912;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    border: solid 3px #405912 ;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    border-radius: 5px;
+    color: #405912;
+    border: solid 3px #405912 ;
+    background: white;
+    transition: 0.6s;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.container-botton-region{
+    
+    height:15vh ;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom:0;
+}  
+  
+button.region-botton{
+  background-color: white;
+  border: solid 5px #405912 ;
+  border-radius: 15px;
+  color: #405912;
+  width: 14vw;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 0 5vw 0 5vw;
+}
+
+button.region-botton:hover{
+    border: solid 5px #405912 ;
+    color: white;
+    background-color: #405912;
+    transition: 0.6s;
+}
+
+.page{
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* //////////////////////////////////////// */

@@ -9,12 +9,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>ชวนมาเที่ยว</title>
    @!section("style-section")
    {{style("CSS/reset")}}
    {{style("CSS/nav")}}
    {{style("CSS/footer")}}
+   {{style("CSS/login")}}
    <script>
     window.fbAsyncInit = function() {
       FB.init({
@@ -47,20 +50,22 @@
     nonce="tGOmVxCe">
     </script> 
 
-    
-
-    <nav class="topnav"> 
-        <button class="button" href="">สร้างโพส</button>
-        <div 
-            class="fb-login-button" 
-            data-size="large" 
-            data-button-type="login_with" 
-            data-layout="default" 
-            data-auto-logout-link="true" 
-            data-use-continue-as="true" 
-            data-width="">
-        </div>
-        
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Go_travel</a>
+        <form class="d-flex">
+          <button class="button" type="submit">กระทู้</button>
+          <div 
+          class="fb-login-button" 
+          data-size="large" 
+          data-button-type="login_with" 
+          data-layout="default" 
+          data-auto-logout-link="true" 
+          data-use-continue-as="true" 
+          data-width="">
+          </div>
+        </form>
+      </div>
     </nav>
 
     @!section("home")
@@ -70,9 +75,8 @@
     @!section("regionSouthern")
     @!section("regionCentral")
     @!section("regionIsaan")
-    <footer class="footer">
-     <p>project M5</p>
-    </footer>
+
+  
 </body>
 </html>
 
