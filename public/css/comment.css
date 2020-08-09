@@ -1,14 +1,27 @@
 .content{
     width: 100%;
-    height: 800px;
+    height: 800vh;
     background-color: #34382E;
 }
 .container {
-    padding: 2px 16px;
+    padding: 10vh 10vw;
   }
   .container {
-    border-radius: 5px;
+    border-radius: 5vh;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 20vh;
   }
-  
+  .page{
+    height: 500vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+}
+ .container1 {
+    border-radius: 5vh;
+    background-color: #34382E;
+    padding: 20vh;
+  }
+  .container1 {
+    padding: 10vh 10vw;
+  }
