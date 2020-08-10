@@ -34,13 +34,13 @@ h4{
   }
   
   .container {
-    padding: 2px 16px;
+    padding: 2vh 16vw;
   }
   .container {
-    border-radius: 5px;
+    border-radius: 5vh;
     background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20vw;
+    margin-bottom: 20vh;
   }
 
 * {
@@ -75,16 +75,16 @@ h4{
   }
   
   .container {
-    border-radius: 5px;
+    border-radius: 5vh;
     background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 5vh;
+    margin-bottom: 20vh;
   }
   
   .col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    margin-top: 2vh;
   }
   
   .col-75 {
