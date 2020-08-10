@@ -15,7 +15,7 @@
   margin: 2vh 5vh 2vh 5vh;
   padding: 10vh 10vw;
   border-radius: 5vh;
-  background-color: #f2f2f2;
+  background-color: white;
 }
 .container-comment { 
   margin: 5vh 5vh 5vh 5vh;
@@ -26,6 +26,54 @@
 
 /* ******************************************************* */
 
+/* Post  */
+
+.fname{
+  border-bottom: 5px solid #34382E;
+  font-size: 35PX;
+}
+
+.date-post{
+  font-size: 18px;
+}
+
+.container-post-image {
+  display: flex;
+  justify-content : space-evenly;
+  margin-bottom: 5vh;
+  }
+  
+.img-post{
+  height: 20vh;
+  width: 20vw;
+  margin: 5vh 12px 5vh;
+}
+
+/* ratiog start */
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  width: 1.1em;
+  font-size: 50px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+  
+/* ******************************************************* */
+
+/* text review */
+.text-review{
+  font-size: 30px;
+  margin: 10vh 0 10vh 0;
+}
+/* ******************************************************* */
 /* page container chat */
 .page{
   height: 100%;
@@ -43,7 +91,7 @@
 
 .container-comment-chat {
   border: 2px solid #34382E;
-  background-color: #f1f1f1;
+  background-color: white;
   border-radius: 50px;
   padding: 10px;
   margin: 5vh 0;
