@@ -68,35 +68,17 @@
 
 /* region-botton */
 
-.container-botton-region{
+.container-region{
     display: flex;
     justify-content : space-evenly;
-    height:15vh ;
+    height: 18vh ;
     text-align: center;
     padding-top: 3vh;
-    padding-bottom:0;
-
 }  
 
-button.region-botton{
-  background-color: white;
-  border: solid 5px #405912 ;
-  border-radius: 15px;
-  color: #405912;
-  width: 14vw;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 0 5vw 0 5vw;
-}
-
-button.region-botton:hover{
-    border: solid 5px #405912 ;
-    color: white;
-    background-color: #405912;
-    transition: 0.6s;
+.region-text{
+    color: #405912;
+    font-size: 60px;
 }
 /* ********************************************************* */
 
@@ -124,7 +106,7 @@ button.region-botton:hover{
   background-color: rgb(75, 80, 76);
   display: flex;
   justify-content : space-evenly;
-  margin: 5vh 0  5vh 0;
+  margin: 0 0  5vh 0;
   padding: 5vh 0 5vh 0;  
   font-size: 30px;
 }

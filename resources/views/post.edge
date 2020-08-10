@@ -4,14 +4,15 @@
 @section("post")   
 {{style("CSS/post")}}
 {{style("CSS/font")}}
-<div class="content">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<form method="GET" action="{{route('/psot')}}">
+    <div class="content">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
-<h2>มาสร้างประสบการณ์การเที่ยวของคุณให้คุณอื่นรู้กัน</h2>
-<p>วิธีใช้ ให้กรอกแบบฟอร์มตามข้างล่าง เพื่อสร้างกระทู้ของคุณ </p>
-<p>ขอบคุณที่มาร่วมแบ่งบันการเที่ยวของคุณให้กับเรา </p>
-        <form method="GET" action="{{route('/home')}}">
-        </form>
+    <h2>มาสร้างประสบการณ์การเที่ยวของคุณให้คุณอื่นรู้กัน</h2>
+    <p>วิธีใช้ ให้กรอกแบบฟอร์มตามข้างล่าง เพื่อสร้างกระทู้ของคุณ </p>
+    <p>ขอบคุณที่มาร่วมแบ่งบันการเที่ยวของคุณให้กับเรา </p>
+        
+        
         <div class="container">
                 <div class="row">
                   <div class="col-25">
@@ -81,6 +82,8 @@
                                   <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
                                 </div>
                 </div>
+
+
                 <div class="card">
                         <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
                         <div class="container">
@@ -88,5 +91,53 @@
                           <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
                         </div>
                  </div>
-        </div>
+                 <div class="card">
+                  <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                    <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                  </div></a>
+
+          
+          </div>
+           <div class="card">
+                          <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                          <div class="container">
+                            <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                            <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                          </div>
+          </div>
+          <div class="card">
+                  <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                    <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                  </div>
+           </div>
+
+
+           <div class="card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div></a>
+
+                
+                </div>
+                 <div class="card">
+                                <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                  <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                                  <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                                </div>
+                </div>
+                <div class="card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div>
+                 </div>
+ </form>      
 @endsection
