@@ -132,7 +132,7 @@ button.region-botton:hover{
   display: flex;
   flex-direction: column;
 }
-
+/* text head */
 .text{
   color: white;
   background-color: rgb(151, 179, 156);
