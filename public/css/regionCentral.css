@@ -1,84 +1,124 @@
 /* carousel images head */
 
 .container-image{
-    position: relative;
-    height: 75vh;
-    width: 100%;
-    text-align: center;
-    background: rgb(75, 80, 76);
-    background-image: url(../image/backg.jpg);
-    background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position: center;
-  }
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  text-align: center;
+  background: #e2e2e1;
+  background-image: url(../image/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .container-image img{
-    position: relative;
+  position: relative;
 }
 
+.container-page{
+display: flex;
+  justify-content : space-evenly;
+  height:auto ;
+  text-align: center;
+  margin:0 10vw 0 10vw;
+}
 
-  h1{
-    color: white;
+.container-page-text{
+  display: flex;
+    justify-content : space-evenly;
+    height:auto ;
+    text-align: center;
+    margin: 5vh 10vw 5vh 10vw;
     font-size: 60px;
-    padding-top: 20vh;
-  }
-
-  /* formexample button */
-
-  form.example input[type=text] {
-    margin-top: 10vh;
-    margin-left: 50vh;
-    padding: 10px;
-    font-size: 17px;
-    border: solid 3px #405912 ;
-    float: left;
-    width: 40%;
-    background: white;
-    border-radius: 5px;
-    
-  }
-  
-  form.example button {
-    float: left;
-    margin-left: 10px;
-    margin-top: 10vh;
-    width: 5%;
-    padding: 10px;
-    background: #405912;
-    color: white;
-    font-size: 17px;
-    border-radius: 5px;
-    border: solid 3px #405912 ;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    border-radius: 5px;
     color: #405912;
-    border: solid 3px #405912 ;
-    background: white;
-    transition: 0.6s;
+
   }
+
+
+h1{
+  color: white;
+  font-size: 60px;
+  padding-top: 20vh;
+}
+
+/* formexample button */
+
+form.example input[type=text] {
+  margin-top: 10vh;
+  margin-left: 50vh;
+  padding: 10px;
+  font-size: 17px;
+  border: solid 3px #405912 ;
+  float: left;
+  width: 40%;
+  background: white;
+  border-radius: 5px;
   
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+}
+
+form.example button {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10vh;
+  width: 5%;
+  padding: 10px;
+  background: #405912;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  border: solid 3px #405912 ;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  border-radius: 5px;
+  color: #405912;
+  border: solid 3px #405912 ;
+  background: white;
+  transition: 0.6s;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* ********************************************************* */
 
 /* region-botton */
+.container-page-bg{
+display: flex;
+justify-content : space-evenly;
+}
 
-.container-region{
-    display: flex;
-    justify-content : space-evenly;
-    height: 18vh ;
-    text-align: center;
-    padding-top: 3vh;
+.container-botton-region{
+  margin-top: 2vh;
+  height:15vh ;
+  text-align: center;
+  padding: 3vh 0 3vh 0;
+  
+
 }  
 
-.region-text{
-    color: #405912;
-    font-size: 60px;
+button.region-botton{
+background-color: white;
+border: solid 5px #405912 ;
+border-radius: 15px;
+color: #405912;
+width: 14vw;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+padding: 10px 0 10px 0;
+margin-left: 20px;
+}
+
+button.region-botton:hover{
+  border: solid 5px #405912 ;
+  color: white;
+  background-color: #405912;
+  transition: 0.6s;
 }
 /* ********************************************************* */
 
@@ -86,55 +126,78 @@
 /* page-card */
 
 .page{
-  height: 500px;
-  width: 100%;
-  background-color: white;
-  text-align: center;
+
+height: 100%;
+width: 100%;
+background-color: white;
+text-align: center;
+margin-bottom: 5vh;
+border-radius: 50px;
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
 }
 
 .text{
-  color: white;
-  background-color: rgb(75, 80, 76);
-  display: flex;
-  justify-content : space-evenly;
-  margin: 0 0  5vh 0;
-  padding: 5vh 0 5vh 0;  
-  font-size: 30px;
+color: white;
+background-color: rgb(151, 179, 156);
+display: flex;
+justify-content : space-evenly;
+margin: 5vh 0  5vh 0;
+padding: 5vh 0 5vh 0;  
+font-size: 30px;
 }
 /* ********************************************************* */
 
 
 /* container-card */
 .container-card {
-  display: flex;
-  justify-content : space-evenly;
-  margin-bottom: 5vh;
+display: flex;
+justify-content : space-evenly;
+margin-bottom: 5vh;
 }
 
+h3{
+font-size: 20px;
+}
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
-  background-origin: 5px;
-  transition: 0.3s;
-  width: 25%;
-  border-radius: 5px;
-  display: inline-flex;
-  padding: 7px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+background-origin: 5px;
+transition: 0.3s;
+width: 25%;
+border-radius: 5px;
+display: inline-flex;
+padding: 7px;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* ********************************************************* */
 
+/* ratiog start */
 
+.rating {
+unicode-bidi: bidi-override;
+direction: rtl;
+}
+.rating > span {
+display: inline-block;
+position: relative;
+width: 1.1em;
+font-size: 30px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+ content: "\2605";
+ position: absolute;
+}
 
+/* ********************************************************* */
