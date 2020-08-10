@@ -1,4 +1,4 @@
-.content{
+.background{
   background-color: #34382E;
 }
 h2{
@@ -13,6 +13,115 @@ h4{
 .p1{
   color: black;
 }
+/* *********************form************************** */
+  
+  
+  .container-form {
+    padding: 2px 16px; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 10vw 5vh 10vw ;
+   
+  }
+ 
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], textarea {
+    width: 54vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  select{
+    width: 30vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(24, 85, 27);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:0  4vw 0 4vh;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 2px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+/**************** page-card ************************ */
+
+.page{
+  
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  border-radius: 50px;
+}
+.container-page{
+  display: flex;
+    justify-content : space-evenly;
+    height:auto ;
+    text-align: center;
+    margin:0 2vw 0 2vw;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container-card {
+  display: flex;
+  justify-content : space-evenly;
+  margin-bottom: 5vh;
+}
+
+h3{
+  font-size: 20px;
+}
 
 /* container-card */
 .container-card {
@@ -21,6 +130,9 @@ h4{
   margin-bottom: 5vh;
 }
 
+h3{
+  font-size: 20px;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
@@ -34,77 +146,32 @@ h4{
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
-/* ********************************************************* */
-  
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-* {
-  box-sizing: border-box;
-}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-input[type=submit] {
-  background-color: rgb(24, 85, 27);
+.text{
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.page{
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  text-align: center;
+  background-color: rgb(151, 179, 156);
   display: flex;
   justify-content : space-evenly;
+  margin: 5vh 0  5vh 0;
+  padding: 5vh 0 5vh 0;  
+  font-size: 30px;
 }
+
+/* ratiog start */
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 30px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+
