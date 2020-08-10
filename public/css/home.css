@@ -5,7 +5,7 @@
     height: 75vh;
     width: 100%;
     text-align: center;
-    background: rgb(75, 80, 76);
+    background: #96b165;
     background-image: url(../image/backg.jpg);
     background-repeat: no-repeat;
     background-size: 1000px;
@@ -104,6 +104,7 @@ button.region-botton:hover{
 /* page-card */
 
 .page{
+  
   height: 500px;
   width: 100%;
   background-color: white;
@@ -154,5 +155,24 @@ button.region-botton:hover{
 
 /* ********************************************************* */
 
+/* ratiog start */
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 30px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+/* ********************************************************* */
 
 
