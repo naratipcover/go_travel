@@ -1,27 +1,133 @@
 .content{
-    width: 100%;
-    height: 800vh;
-    background-color: #34382E;
+  width: auto;
+  height: 100%;
+  /* background-color: #34382E; */
 }
-.container {
-    padding: 10vh 10vw;
-  }
-  .container {
-    border-radius: 5vh;
-    background-color: #f2f2f2;
-    padding: 20vh;
-  }
-  .page{
-    height: 500vh;
-    width: 100vw;
-    background-color: white;
-    text-align: center;
+
+/* comment container */
+
+.content-comment{
+  width: auto;
+  height: 100%;
+  background-color: #34382E;
 }
- .container1 {
-    border-radius: 5vh;
-    background-color: #34382E;
-    padding: 20vh;
-  }
-  .container1 {
-    padding: 10vh 10vw;
-  }
+.container-post { 
+  margin: 2vh 5vh 2vh 5vh;
+  padding: 10vh 10vw;
+  border-radius: 5vh;
+  background-color: #f2f2f2;
+}
+.container-comment { 
+  margin: 5vh 5vh 5vh 5vh;
+  padding: 2vh 2vw;
+  border-radius: 5vh;
+  background-color: #f2f2f2;
+}
+
+/* ******************************************************* */
+
+/* page container chat */
+.page{
+  height: 100%;
+  width: auto;
+  text-align: center;
+}
+.container1 {
+  border-radius: 5vh;
+  background-color: #34382E;
+  padding: 5vh 5vw;
+  margin: 5vh 5vw 5vh ;
+}
+
+/* chat */
+
+.container-comment-chat {
+  border: 2px solid #34382E;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5vh 0;
+}
+
+.darker {
+  border-color: #34382E;
+  background-color: #6d854b;
+}
+
+.container-comment-chat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-comment-chat label.left {
+  float: left;
+  max-width: 100px;
+  margin-top: 10px;
+  margin-left: 5vh;
+  font-size: 20px;
+  
+}
+.container-comment-chat p {
+  margin-top: 5vh;
+  font-size: 25px;
+  
+}
+
+.container-comment-chat label.right {
+  float: right;
+  margin-top: 10px;
+  margin-right: 5vh;
+  max-width: 100px;
+  font-size: 20px;
+}
+
+.time-right {
+  margin-right: 5vh;
+  margin-bottom: 15px;
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  margin-left: 5vh;
+  margin-bottom: 15px;
+  float: left;
+  color: white;
+}
+
+/* **************** input comment ************************ */
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #34382E;
+  border-radius: 4px;
+  font-size: 20px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=submit] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #34382E;
+  background-color: #34382E;
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin-top: 10px;
+  margin-bottom: 5vh;
+}
+
+input[type=submit]:hover {
+  transform: 0.8;
+  background-color: white;
+  color: #34382E;
+
+}
+
+/* ****************************************************************** */
