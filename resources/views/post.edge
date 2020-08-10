@@ -5,106 +5,196 @@
 {{style("CSS/post")}}
 {{style("CSS/font")}}
 <form method="GET" action="{{route('/psot')}}">
-    <div class="content">
+    <div class="background">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
     <h2>มาสร้างประสบการณ์การเที่ยวของคุณให้คุณอื่นรู้กัน</h2>
     <p>วิธีใช้ ให้กรอกแบบฟอร์มตามข้างล่าง เพื่อสร้างกระทู้ของคุณ </p>
     <p>ขอบคุณที่มาร่วมแบ่งบันการเที่ยวของคุณให้กับเรา </p>
-        
-        
-        <div class="container">
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">ชื่อโพสของคุณ</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="ใส่ชื่อโพส">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="lname">สถานที่ที่คุณไปมา</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="ใส่ชื่อสถานที่">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="country">เลือกภาคที่คุณไปมา</label>
-                  </div>
-                  <div class="col-75">
-                    <select id="country" name="country">
-                      <option value="nort">ภาคเหนือ</option>
-                      <option value="South">ภาคใต้</option>
-                      <option value="Northeast">ภาคอีสาน</option>
-                      <option value="Central">ภาคกลาง</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row">
-                        <div class="col-25">
-                                <label for="country">เลือกรูปของคุณ</label>
-                        </div>
-                        <div class="col-75">
-                           <input type="file" id="myFile" name="filename">
-                        </div>      
-                <div class="row">
-                  <div class="col-25">
-                    <label for="subject">รายละเอียดของคุณ ไหนรีวิวสิ</label>
-                  </div>
-                  <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="เขียนรีวิวหน่อย" style="height:200px"></textarea>
-                  </div>
-                </div>
+
+    <div class="container-form">
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="namepost">ชื่อโพสของคุณ</label>
+        </div>
+
+            <div class="col-75">
+              <input type="text" id="namepos" name="namepost" placeholder="ใส่ชื่อโพส">
+            </div>
+            </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">สถานที่ที่คุณไปมา</label>
+        </div>
+
+        <div class="col-75">
+          <input type="text" id="nameAddress" name="nameAddress" placeholder="ใส่ชื่อสถานที่">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">เลือกภาคที่คุณไปมา</label>
+        </div>
+
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="nort">ภาคเหนือ</option>
+            <option value="South">ภาคใต้</option>
+            <option value="Northeast">ภาคอีสาน</option>
+            <option value="Central">ภาคกลาง</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+              <div class="col-25">
+                      <label for="namepic">เลือกรูปของคุณ</label>
+              </div>
+              <div class="col-75">
+                 <input type="file" id="myFile" name="pic">
+              </div>  
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">รายละเอียดของคุณ ไหนรีวิวสิ</label>
+        </div>
+
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="เขียนรีวิวหน่อย" style="height:200px"></textarea>
+        </div>
+      </div>
 
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="subject">ให้คะเเนนสถานที่ของคุณ</label>
-                  </div>
-                  <div class="col-75">
-                    <div class="rating">
-                      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                      </div>
-                  </div>
-                   
-                  </div>
-
-
-                <div class="row">
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">ให้คะเเนนสถานที่ของคุณ</label>
+        </div>
+        <div class="col-75">
+          <div class="ratingform">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+        </div>
+         
+        <div class="row">
                   <input type="submit" value="Submit">
                 </div>
-                </form>
+                
               </div>
         </div>
-        <div class="page">
-                <br> <h4> ━━━━━━━━━━━━━━━━ รีวิวล่าสุด ━━━━━━━━━━━━━━━━ </h4><br>
-                <div class="container-card">
-                  <div class="card item-card">
-                          <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
-                          <div class="container">
-                            <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
-                            <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
-                          </div></a>
-      
-                  
-                  </div>
-                  <div class="card item-card">
-                                  <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
-                                  <div class="container">
-                                    <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
-                                    <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
-                                  </div>
-                  </div>
-                  <div class="card item-card">
-                          <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
-                          <div class="container">
-                            <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
-                            <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+     
+        </div>
+        
+        <div class="container-page-bg">
+          <div class="container-page">
+            <div class="page">
+              <div class="text head"> ━━━━━━━━━━━━━━━━ รีวิวล่าสุด ━━━━━━━━━━━━━━━━ </div>
+              <div class="container-card">
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div></a>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                           </div>
-                  </div>
                 </div>
- </form>      
+                <div class="card item-card">
+                                <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                  <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                                  <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                                </div>
+                                <div class="rating">
+                                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                  </div>
+                </div>
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                </div>
+              </div>
+    
+    
+              <div class="container-card">
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div></a>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                </div>
+                <div class="card item-card">
+                                <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                  <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                                  <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                                </div>
+                                <div class="rating">
+                                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                  </div>
+                </div>
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                </div>
+              </div>
+    
+              <div class="container-card">
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div></a>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                </div>
+                <div class="card item-card">
+                                <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                  <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                                  <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                                </div>
+                                <div class="rating">
+                                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                  </div>
+                </div>
+                <div class="card item-card">
+                        <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
+                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                        </div>
+                        <div class="rating">
+                          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          </div>
+      
+ </form>    
+   
 @endsection
