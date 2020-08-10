@@ -5,14 +5,22 @@
     height: 75vh;
     width: 100%;
     text-align: center;
-    background: #96b165;
+    background: #e2e2e1;
     background-image: url(../image/backg.jpg);
     background-repeat: no-repeat;
-    background-size: 1000px;
+    background-size: cover;
     background-position: center;
   }
 .container-image img{
     position: relative;
+}
+
+.container-page{
+  display: flex;
+    justify-content : space-evenly;
+    height:auto ;
+    text-align: center;
+    margin:0 10vw 0 10vw;
 }
 
 
@@ -67,14 +75,17 @@
 /* ********************************************************* */
 
 /* region-botton */
+.container-page-bg{
+  display: flex;
+  justify-content : space-evenly;
+}
 
 .container-botton-region{
-    display: flex;
-    justify-content : space-evenly;
+    margin-top: 2vh;
     height:15vh ;
     text-align: center;
-    padding-top: 3vh;
-    padding-bottom:0;
+    padding: 3vh 0 3vh 0;
+    
 
 }  
 
@@ -84,12 +95,12 @@ button.region-botton{
   border-radius: 15px;
   color: #405912;
   width: 14vw;
-  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 25px;
-  margin: 0 5vw 0 5vw;
+  padding: 10px 0 10px 0;
+  margin-left: 20px;
 }
 
 button.region-botton:hover{
@@ -105,10 +116,12 @@ button.region-botton:hover{
 
 .page{
   
-  height: 500px;
+  height: 100%;
   width: 100%;
   background-color: white;
   text-align: center;
+  margin-bottom: 5vh;
+  border-radius: 50px;
 }
 
 .container {
@@ -122,7 +135,7 @@ button.region-botton:hover{
 
 .text{
   color: white;
-  background-color: rgb(75, 80, 76);
+  background-color: rgb(151, 179, 156);
   display: flex;
   justify-content : space-evenly;
   margin: 5vh 0  5vh 0;
@@ -139,6 +152,9 @@ button.region-botton:hover{
   margin-bottom: 5vh;
 }
 
+h3{
+  font-size: 20px;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
