@@ -1,10 +1,10 @@
-@layout("layout_project")
+@layout("layout_user")
 @section('style-section')
 {{style("CSS/login")}}
 
 @endsection 
 @section("login")
-<form method="GET" action="{{route('/login')}}">
+<form method="POST" action="{{route('/login')}}">
 <div class="container">
    
 <div class="container-input">
@@ -19,7 +19,7 @@
                 <div class="text">
         
                  
-                  <input type="text" placeholder="username" name="userform"></li><br>
+                  <input type="text" placeholder="username" name="username"></li><br>
                   <input type="password" placeholder="Password" name="password"><br>
                   <label class="register">register ></label><br>
                   <a href=""><button type="submit">submit</button></a>
