@@ -1,17 +1,36 @@
-@layout('layout')
+@layout('layout_project')
 @section("style-section")
 {{style("css/reset")}}
-    {{style("css/login")}}
+    {{style("css/register")}}
 @endsection
-@section("content")
+@section("register")
+<form method="POST" action="{{route('/register')}}">
     <div class="container">
-        <form method="POST" action="{{route('/registerUser')}}">
-            {{csrfField()}} 
-            <div class="text">
-             <input type="text" placeholder="username" name="username">
-               <input type="text" placeholder="email" name="email">
-               <input type="password" placeholder="Password" name="password">
-               <button type="submit">OK</button>
-        </from>
-    </div>
+       
+    <div class="container-input">
+            <div class="container-background-img">
+               <div class="box-container">
+    
+                  <div class="head-text">
+                    <div class="text-login">Register</div>
+                  </div>
+                 <form method="POST" action="{{route('/register')}}">
+                   {{csrfField()}} 
+                    <div class="text">
+            
+                     
+                      <input type="text" placeholder="username" name="usernames"></li><br>
+                      <input type="password" placeholder="Password" name="passwords"><br>
+                      <input type="password" placeholder="confirm password" name="confirmPassword"><br>
+                      <a href=""><button type="submit">submit</button></a>
+                    
+                     </div>
+                 </form>
+    
+               </div>
+            
+            </div>
+      </div>
+        </div>
+    </form>
 @endsection 

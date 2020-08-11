@@ -3,7 +3,7 @@
 @endsection
 @section("commit")   
 {{style("CSS/comment")}}
-<form method="GET" action="{{route('/comment')}}">
+
         <div class="content">
         
             <div class="content-comment">
@@ -58,16 +58,19 @@
                                 <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
                                 <span class="time-left">11:05</span>
                               </div>
-                            
+                              <form method="POST" action="{{route('/comment')}}">  
+                                {{ csrfField() }} 
                               <div class="submit">
-                                  <input type="text" name="search" placeholder="comment ...">
-                                  <input type="submit" value="Submit">
+                                  <input type="text" name="write_post" placeholder="comment ...">
+                                  
+                                  
+                                  <input type="submit" value="Submit" >
                               </div>
-
-            
+                              </form>
+                              
                         </div>
                     </div>
             </div>
             </div>
-</form>
+
 @endsection

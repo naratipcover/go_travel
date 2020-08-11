@@ -1,33 +1,38 @@
-@layout("layout")
+@layout("layout_user")
 @section('style-section')
 {{style("CSS/login")}}
-{{style("CSS/reset")}}
-{{script("js/index")}}
-@endsection 
-@section("content")
 
+@endsection 
+@section("login")
+<form method="POST" action="{{route('/login')}}">
 <div class="container">
-    <form method="POST" action="{{route('/login')}}">
-        {{csrfField()}}
-            <label for="username">email</label>
-            <input type="text" name="password" id="username">
-            <label for="username.">password</label >
-            <input type="password" name="password" id="password">
-            <button type="submit">Submit</button>
-            <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v8.0&appId=393084781668182&autoLogAppEvents=1" nonce="iWdgN4go"></script>
-        </form>
-        <div class="fb-login-button"
-         data-size="large" 
-         data-button-type="continue_with" 
-         data-layout="default" 
-         data-auto-logout-link="false" 
-         data-use-continue-as="false" 
-         data-width="" 
-         onlogin="checkLoginState();">
+   
+<div class="container-input">
+        <div class="container-background-img">
+           <div class="box-container">
+
+              <div class="head-text">
+                <div class="text-login">Login</div>
+              </div>
+             <form method="POST" action="{{route('/login')}}">
+               {{csrfField()}} 
+                <div class="text">
+        
+                 
+                  <input type="text" placeholder="username" name="username"></li><br>
+                  <input type="password" placeholder="Password" name="password"><br>
+                  <label class="register">register ></label><br>
+                  <a href=""><button type="submit">submit</button></a>
+                
+                 </div>
+             </form>
+
+           </div>
+        
         </div>
-        {{user}}
+  </div>
     </div>
+</form>
 @endsection
 
 
