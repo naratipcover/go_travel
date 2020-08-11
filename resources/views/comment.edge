@@ -10,14 +10,17 @@
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
                 
                 <br><br><div class="container-post">
-                    <div class="row">
-                          <label class="fname"></label>
-                        @each(name in test )
+                    <div class="row">  @each(name in test )
                         {{name.namepost}}
                         @endeach
-                        <label class="date-post">11/8/2563</label>
+                          <label class="fname"></label>
+                          <label class="date-post">11/8/2563</label>
+                      
+                        
                         @each(item in subject )
                         {{item.nameAddress}}
+                        {{item.country}}
+                        {{item.subject}}
                         @endeach
                         </div>
 

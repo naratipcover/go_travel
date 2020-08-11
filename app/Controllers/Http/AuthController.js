@@ -53,9 +53,11 @@ class AuthController {
     }
     async forms ({view,request,response}) {
         const database = await Database.select('namepost').from("forms")
+        const data =await Database.select('*').from('forms')
+      
         let test = database
-        let subject =database
-        await Database.select('*').from("forms")
+        let subject =data
+         
         return view.render("comment",{test,subject});
     }
    
