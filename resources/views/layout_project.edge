@@ -40,33 +40,19 @@
   </script>
 </head>
 <body>
-    {{ script('js/index') }}
-    <div id="fb-root"></div>
     
-    <script 
-    async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v8.0&appId=393084781668182&autoLogAppEvents=1" 
-    nonce="tGOmVxCe">
-    </script> 
-
+    
+    
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand">Go_travel</a>
+        <a class="navbar-brand" href="home"> ชวนมาเที่ยว</a>
         <form class="d-flex">
-          <button class="button" type="submit">กระทู้</button>
-          <div 
-          class="fb-login-button" 
-          data-size="large" 
-          data-button-type="login_with" 
-          data-layout="default" 
-          data-auto-logout-link="true" 
-          data-use-continue-as="true" 
-          data-width="">
-          </div>
+           <a class="post" href="post"><button class="button" type="submit">กระทู้</button></a>
         </form>
       </div>
     </nav>
-
+    @!section("login")
+    @!section("register")
     @!section("home")
     @!section("post")
     @!section("commit")
@@ -74,6 +60,7 @@
     @!section("regionSouthern")
     @!section("regionCentral")
     @!section("regionIsaan")
+    @!section("index")
 
   
 </body>
