@@ -81,7 +81,7 @@
 }
 
 .container-botton-region{
-    margin-top: 2vh;
+    margin-bottom: 20px;
     height:15vh ;
     text-align: center;
     padding: 3vh 0 3vh 0;
@@ -95,6 +95,7 @@ button.region-botton{
   border-radius: 15px;
   color: #405912;
   width: 14vw;
+  height: 10vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -149,7 +150,7 @@ button.region-botton:hover{
 .container-card {
   display: flex;
   justify-content : space-evenly;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 h3{
