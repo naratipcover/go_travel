@@ -1,5 +1,6 @@
 'use strict'
 const Database = use("Database");
+let name ;
 class AuthController {
     async login ({view,request,response}) {
         return view.render("login");
@@ -34,23 +35,31 @@ class AuthController {
     //    yield
     //    await = yield 
        return response.redirect("/login");
+         
+
    }
-    
+    async form({request,response}){
+       const {namepost,nameAddress,country,subject} = request.body
 
-   
-    async postform({request,response}){
-       const {namepost,nameAddress,country,subject}=request.body
-       
-        await Database.insert({namepost,nameAddress,country,subject}).into("postforms")
+       console.log(request)
+        await Database.table('forms').insert({ namepost,nameAddress,country,subject})
 
-        return response.redirect("/home")
+        return response.redirect("/comment")
    }
 
 // ....................................................................
     home ({view,request,response}) {
         return view.render("home");
     }
+    async forms ({view,request,response}) {
+        const database = await Database.select('namepost').from("forms")
+        let test = database
+        let subject =database
+        await Database.select('*').from("forms")
+        return view.render("comment",{test,subject});
+    }
    
+    
     comment ({view,request,response}) {
         return view.render("comment");
     }
