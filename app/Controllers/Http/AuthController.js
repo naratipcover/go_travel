@@ -15,6 +15,7 @@ class AuthController {
         // }
         return view.render("login", { users })
     }
+
     loginUser({view,request,response}){
         const {username,password} =request.body
         // const profile = request.body
@@ -35,6 +36,16 @@ class AuthController {
        return response.redirect("/login");
    }
     
+
+   
+    async postform({request,response}){
+       const {namepost,nameAddress,country,subject}=request.body
+       
+        await Database.insert({namepost,nameAddress,country,subject}).into("postforms")
+
+        return response.redirect("/home")
+   }
+
 // ....................................................................
     home ({view,request,response}) {
         return view.render("home");
