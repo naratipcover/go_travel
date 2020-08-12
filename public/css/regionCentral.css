@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   background: #e2e2e1;
-  background-image: url(../image/backg.jpg);
+  background-image: url(../image/central.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,17 +23,6 @@ display: flex;
   margin:0 10vw 0 10vw;
 }
 
-.container-page-text{
-  display: flex;
-    justify-content : space-evenly;
-    height:auto ;
-    text-align: center;
-    margin: 5vh 10vw 5vh 10vw;
-    font-size: 60px;
-    color: #405912;
-
-  }
-
 
 h1{
   color: white;
@@ -48,9 +37,10 @@ form.example input[type=text] {
   margin-left: 50vh;
   padding: 10px;
   font-size: 17px;
-  border: solid 3px #405912 ;
+  border: solid 3px white ;
   float: left;
   width: 40%;
+  height: 7vh;
   background: white;
   border-radius: 5px;
   
@@ -60,13 +50,14 @@ form.example button {
   float: left;
   margin-left: 10px;
   margin-top: 10vh;
+  height: 7vh;
   width: 5%;
   padding: 10px;
   background: #405912;
   color: white;
   font-size: 17px;
   border-radius: 5px;
-  border: solid 3px #405912 ;
+  border: solid 3px white ;
   cursor: pointer;
 }
 
@@ -92,10 +83,10 @@ justify-content : space-evenly;
 }
 
 .container-botton-region{
-  margin-top: 2vh;
+  margin-bottom: 20px;
   height:15vh ;
   text-align: center;
-  padding: 3vh 0 3vh 0;
+  padding: 3vh  3vh 0;
   
 
 }  
@@ -106,6 +97,7 @@ border: solid 5px #405912 ;
 border-radius: 15px;
 color: #405912;
 width: 14vw;
+height: 10vh;
 text-align: center;
 text-decoration: none;
 display: inline-block;
@@ -143,7 +135,7 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 }
-
+/* text head */
 .text{
 color: white;
 background-color: rgb(151, 179, 156);
@@ -160,7 +152,7 @@ font-size: 30px;
 .container-card {
 display: flex;
 justify-content : space-evenly;
-margin-bottom: 5vh;
+margin-bottom: 2vh;
 }
 
 h3{
@@ -201,3 +193,5 @@ font-size: 30px;
 }
 
 /* ********************************************************* */
+
+
