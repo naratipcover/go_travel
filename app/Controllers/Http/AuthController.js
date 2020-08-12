@@ -47,7 +47,7 @@ class AuthController {
          
 
    }
-    async form({request,response}){
+    async createPost({request,response}){
        const {namepost,nameAddress,country,subject} = request.body
 
        console.log(request)
