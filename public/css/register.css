@@ -3,6 +3,10 @@
     flex: 1;
     justify-content: center;
     align-items: center;
+    padding: 15vh;
+    padding-bottom: 23.8vh;
+    background-image: url(../image/bg_login_register.jpg);
+    background-size: cover;
   }
   .head-text{
     color:white;
