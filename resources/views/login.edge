@@ -5,33 +5,31 @@
 @endsection 
 @section("login")
 <form method="POST" action="{{route('/login')}}">
-<div class="container">
-   
-<div class="container-input">
+  
+    <div class="container-login">
+      <div class="container-input">
         <div class="container-background-img">
            <div class="box-container">
 
               <div class="head-text">
-                <div class="text-login">Login</div>
+                <div class="text-login">เข้าสู่ระบบ</div>
               </div>
              <form method="POST" action="{{route('/login')}}">
                {{csrfField()}} 
                 <div class="text">
         
                  
-                  <input type="text" placeholder="username" name="username"></li><br>
-                  <input type="password" placeholder="Password" name="password"><br>
-                 <a href="register"> <label class="register">register ></label><br>
-                  <button type="submit">submit</button></a>
+                  <input type="text" placeholder="ชื่อผู้ใช้ .." name="username"></li><br>
+                  <input type="password" placeholder="รหัส .. " name="password"><br>
+                 <a href="register"> <label class="register">สมัครสมาชิก ></label><br>
+                  <button type="submit">ตกลง</button></a>
                 
                  </div>
              </form>
-
            </div>
-        
+          </div>
         </div>
-  </div>
-    </div>
+      </div>
 </form>
 @endsection
 
