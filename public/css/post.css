@@ -33,7 +33,13 @@ h4{
 * {
     box-sizing: border-box;
   }
+ 
+  input[type=file]{
+
+    margin-top: 20px;
   
+  }
+
   input[type=text], textarea {
     width: 54vw;
     padding: 12px;
