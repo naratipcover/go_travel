@@ -33,13 +33,6 @@ class AuthController {
         return view.render("home");
     
     }
-    loginUser({view,request,response}){
-        const {username,password} =request.body
-        // const profile = request.body
-        // console.log(profile)
-        // return view.render("login")
-        return response.redirect("/login")
-    }
     register = ({view}) => {
         return view.render("register")
     }
