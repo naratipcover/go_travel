@@ -34,12 +34,13 @@
 
   form.example input[type=text] {
     margin-top: 10vh;
-    margin-left: 50vh;
+    margin-left: 40vh;
+    margin-right: auto;
     padding: 10px;
     font-size: 17px;
     border: solid 3px white ;
     float: left;
-    width: 40%;
+    width: 52vw;
     height: 7vh;
     background: white;
     border-radius: 5px;
@@ -83,6 +84,7 @@
 }
 
 .container-botton-region{
+    margin-top: 15px;
     margin-bottom: 20px;
     height:15vh ;
     text-align: center;
@@ -97,7 +99,7 @@ button.region-botton{
   border-radius: 15px;
   color: #405912;
   width: 14vw;
-  height: 10vh;
+  height: 8vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
