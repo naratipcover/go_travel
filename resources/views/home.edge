@@ -28,22 +28,20 @@
          
             <div class="container-card">
             <div class="card item-card"> 
-                        @each(name in test )
-                        {{name.namepost}}
-                        @endeach
-                        
-                        @each(item in subject )
-                        {{item.nameAddress}}
-                        {{item.country}}
-                        {{item.subject}}
-                        @endeach
-                    <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
+
+                       
+
+                    <img src="{{assetsUrl("image/no-image.jpg")}}" alt="Avatar" style="width:100%">
                     <div class="container-text">
-                      <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
-                      <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
-                    </div></a>
-                    <div class="rating">
-                      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                      @each(name in test )
+                      {{name.namepost}}
+                      @endeach
+                      
+                      @each(item in subject )
+                      {{item.nameAddress}}
+                      {{item.country}}
+                      {{item.subject}}
+                      @endeach
                       </div>
             </div>
             <div class="card item-card">
