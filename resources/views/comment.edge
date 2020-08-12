@@ -23,7 +23,7 @@
                         {{item.country}}
                         {{item.subject}}
                         @endeach
-                        
+
                         </div>
 
                     
@@ -60,10 +60,12 @@
                                 <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
                                 <span class="time-left">11:05</span>
                               </div>
+
+                              
                               <form method="POST" action="{{route('/comment')}}">  
                                 {{ csrfField() }} 
                               <div class="submit">
-                                  <input type="text" name="write_post" placeholder="comment ...">
+                                  <input type="text" name="comment" placeholder="comment ...">
                                   
                                   
                                   <input type="submit" value="Submit" >

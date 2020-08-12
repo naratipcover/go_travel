@@ -29,7 +29,7 @@ Route.get("/home", "AuthController.home");
 Route.get("/loginProject", "AuthController.loginProject");
 
 Route.get("/comment", "AuthController.comment");
-Route.post("/comment", "AuthController.commentUser");
+Route.post("/comment", "AuthController.crateComment");
 
 Route.get("/post", "AuthController.post");
 Route.get("/regionNorthern", "AuthController.regionNorthern");

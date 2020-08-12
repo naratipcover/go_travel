@@ -62,14 +62,19 @@ class AuthController {
         let test = database
         let subject =data
         console.log(forms)
-        return view.render("comment,home",{test,subject});
+        return view.render("comment",{test,subject});
     }
-   
     
+    async crateComment({request,response}){
+        const {name,comment} = request.body
+         await Database.table('commentposts').insert({name,comment})
+ 
+         return response.redirect("/comment")
+    }
     comment ({view,request,response}) {
         return view.render("comment");
     }
-    
+
     
 
     register = ({view}) => {
