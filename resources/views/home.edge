@@ -25,8 +25,18 @@
       <div class="container-page">
         <div class="page">
           <div class="text head"> ━━━━━━━━━━━━━━━━ รีวิวล่าสุด ━━━━━━━━━━━━━━━━ </div>
+         
             <div class="container-card">
-            <div class="card item-card">
+            <div class="card item-card"> 
+                        @each(name in test )
+                        {{name.namepost}}
+                        @endeach
+                        
+                        @each(item in subject )
+                        {{item.nameAddress}}
+                        {{item.country}}
+                        {{item.subject}}
+                        @endeach
                     <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
                     <div class="container-text">
                       <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>

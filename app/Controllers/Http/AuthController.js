@@ -61,8 +61,8 @@ class AuthController {
       
         let test = database
         let subject =data
-         
-        return view.render("comment",{test,subject});
+        console.log(forms)
+        return view.render("comment,home",{test,subject});
     }
    
     
