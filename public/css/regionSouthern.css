@@ -34,12 +34,13 @@ h1{
 
 form.example input[type=text] {
   margin-top: 10vh;
-  margin-left: 50vh;
+  margin-left: 40vh;
+  margin-right: auto;
   padding: 10px;
   font-size: 17px;
   border: solid 3px white ;
   float: left;
-  width: 40%;
+  width: 52vw;
   height: 7vh;
   background: white;
   border-radius: 5px;
@@ -83,6 +84,7 @@ justify-content : space-evenly;
 }
 
 .container-botton-region{
+  margin-top: 15px;
   margin-bottom: 20px;
   height:15vh ;
   text-align: center;
@@ -92,18 +94,18 @@ justify-content : space-evenly;
 }  
 
 button.region-botton{
-background-color: white;
-border: solid 5px #405912 ;
-border-radius: 15px;
-color: #405912;
-width: 14vw;
-height: 10vh;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 25px;
-padding: 10px 0 10px 0;
-margin-left: 20px;
+  background-color: white;
+  border: solid 5px #405912 ;
+  border-radius: 15px;
+  color: #405912;
+  width: 14vw;
+  height: 8vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+  margin-left: 20px;
 }
 
 button.region-botton:hover{
@@ -119,57 +121,57 @@ button.region-botton:hover{
 
 .page{
 
-height: 100%;
-width: 100%;
-background-color: white;
-text-align: center;
-margin-bottom: 5vh;
-border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5vh;
+  border-radius: 50px;
 }
 
 .container {
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 /* text head */
 .text{
-color: white;
-background-color: rgb(151, 179, 156);
-display: flex;
-justify-content : space-evenly;
-margin: 5vh 0  5vh 0;
-padding: 5vh 0 5vh 0;  
-font-size: 30px;
+  color: white;
+  background-color: rgb(151, 179, 156);
+  display: flex;
+  justify-content : space-evenly;
+  margin: 5vh 0  5vh 0;
+  padding: 5vh 0 5vh 0;  
+  font-size: 30px;
 }
 /* ********************************************************* */
 
 
 /* container-card */
 .container-card {
-display: flex;
-justify-content : space-evenly;
-margin-bottom: 2vh;
+  display: flex;
+  justify-content : space-evenly;
+  margin-bottom: 2vh;
 }
 
 h3{
-font-size: 20px;
+  font-size: 20px;
 }
 
 .card {
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
-background-origin: 5px;
-transition: 0.3s;
-width: 25%;
-border-radius: 5px;
-display: inline-flex;
-padding: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+  background-origin: 5px;
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 7px;
 }
 .card:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* ********************************************************* */
@@ -177,19 +179,19 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 /* ratiog start */
 
 .rating {
-unicode-bidi: bidi-override;
-direction: rtl;
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
 .rating > span {
-display: inline-block;
-position: relative;
-width: 1.1em;
-font-size: 30px;
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 30px;
 }
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
- content: "\2605";
- position: absolute;
+  content: "\2605";
+  position: absolute;
 }
 
 /* ********************************************************* */
