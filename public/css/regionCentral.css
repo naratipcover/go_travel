@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   background: #e2e2e1;
-  background-image: url(../image/central.png);
+  background-image: url(../image/central.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -57,7 +57,7 @@ form.example button {
   color: white;
   font-size: 17px;
   border-radius: 5px;
-  border: solid 3px #405912 ;
+  border: solid 3px white ;
   cursor: pointer;
 }
 
