@@ -12,7 +12,7 @@
   background-color: #34382E;
 }
 .container-post { 
-  margin: 2vh 5vh 2vh 5vh;
+  margin: 0 5vh 2vh 5vh;
   padding: 10vh 10vw;
   border-radius: 5vh;
   background-color: white;
@@ -40,7 +40,7 @@
 .container-post-image {
   display: flex;
   justify-content : space-evenly;
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
   }
   
 .img-post{
@@ -70,21 +70,23 @@
 
 /* text review */
 .text-review{
-  font-size: 30px;
-  margin: 10vh 0 10vh 0;
+  color: white;
+  font-size: 30px;;
 }
 /* ******************************************************* */
 /* page container chat */
+
 .page{
   height: 100%;
-  width: auto;
+  width: 100%;
   text-align: center;
+  margin-bottom: ;
 }
 .container1 {
   border-radius: 5vh;
   background-color: #34382E;
-  padding: 5vh 5vw;
-  margin: 5vh 5vw 5vh ;
+  padding: 5 7vw 7vh ;
+  margin: 5vh 5vw 5vh  ;
 }
 
 /* chat */
@@ -99,7 +101,7 @@
 
 .darker {
   border-color: #34382E;
-  background-color: #6d854b;
+  background-color: white;
 }
 
 .container-comment-chat::after {
@@ -143,39 +145,62 @@
   float: left;
   color: white;
 }
+/* boder-comment */
 
+.border-comment{
+  border-bottom: 4px solid #34382E;
+  margin-bottom: 4vh;
+}
+
+.form{
+  margin-bottom: 5vh ;
+}
 /* **************** input comment ************************ */
-input[type=text] {
+.bottom-name {
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #34382E;
+  border: 2px solid #ffffff;
+  height: 8vh;
   border-radius: 4px;
   font-size: 20px;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
-
+.bottom-comment {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  height: 20vh;
+  border-radius: 4px;
+  font-size: 20px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 0px 20px 40px 40px;
+}
+.submit{
+  padding: 5vh;
+  background-color: #34382E;
+  border-radius: 20px;
+}
 input[type=submit] {
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #34382E;
+  border: 2px solid #ffffff;
   background-color: #34382E;
   color: white;
   border-radius: 4px;
   font-size: 20px;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
   margin-top: 10px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 input[type=submit]:hover {
-  transform: 0.8;
+  transition: 0.4s;
   background-color: white;
   color: #34382E;
-
 }
 
 /* ****************************************************************** */
