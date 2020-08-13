@@ -8,11 +8,10 @@ class FormsSchema extends Schema {
     this.create('forms', (table) => {
       table.increments()
       table.string('namepost', 100)
-      table.string('nameAddress', 200)
       table.string('country', 60)
       table.string('pic', 60)
       table.string('subject', 500)
-      table.string('rating', 10)
+      table.string('start', 10)
       table.timestamps()
     })
   }

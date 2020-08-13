@@ -9,21 +9,19 @@
             <div class="content-comment">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
                 
-                <br><br><div class="container-post">
-                    <div class="row">  
+                <br><br><div class="container-post"><h3>
+                        @each(name in test )
+                        {{name.namepost}}
+                        @endeach
+                   </h3> <div class="row"> 
                           <label class="fname"></label>
                           <label class="date-post">11/8/2563</label>
                           
-                      @each(name in test )
-                        {{name.namepost}}
+                      <h5>
+                        @each(sub in item )
+                        {{sub.subject}}
                         @endeach
-                        
-                        @each(item in subject )
-                        {{item.nameAddress}}
-                        {{item.country}}
-                        {{item.subject}}
-                        @endeach
-
+                      </h5><br><img src="{{assetsUrl("image/no-image.jpg")}}" alt="Avatar"style="width:300px" >
                         </div>
 
                     
@@ -61,7 +59,7 @@
                                 <span class="time-left">11:05</span>
                               </div>
 
-                              
+
                               <form method="POST" action="{{route('/comment')}}">  
                                 {{ csrfField() }} 
                               <div class="submit">

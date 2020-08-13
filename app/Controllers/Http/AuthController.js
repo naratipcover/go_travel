@@ -27,12 +27,20 @@ class AuthController {
             return response.redirect('/login')
         }
         return response.redirect("/login");
-    }
+    }0
 
-    home ({view,request,response}) {
-        return view.render("home");
+   async home ({view,request,response}) {
+        const test = await Database.select('*').from('forms')
+        const item =await Database.select('*').from('forms')
+        return view.render("home", { test,item });
     
     }
+    async comment ({view,request,response}) {
+        const test = await Database.select('namepost').from('forms')
+        const item =await Database.select('*').from('forms')
+        return view.render("comment", { test,item });
+    }
+
     register = ({view}) => {
         return view.render("register")
     }
@@ -48,22 +56,17 @@ class AuthController {
 
    }
     async createPost({request,response}){
-       const {namepost,nameAddress,country,subject} = request.body
+       const {namepost,country,subject} = request.body
 
        console.log(request)
-        await Database.table('forms').insert({ namepost,nameAddress,country,subject})
-
+        await Database.table('forms').insert({namepost,country,subject})
         return response.redirect("/comment")
    }
     async forms ({view,request,response}) {
-        const database = await Database.select('namepost').from("forms")
-        const data =await Database.select('*').from('forms')
-      
-        let test = database
-        let subject =data
-        console.log(forms)
-        return view.render("comment",{test,subject});
+        
+        return view.render("comment")
     }
+      
     
     async crateComment({request,response}){
         const {name,comment} = request.body
@@ -71,10 +74,7 @@ class AuthController {
  
          return response.redirect("/comment")
     }
-    comment ({view,request,response}) {
-        return view.render("comment");
-    }
-
+   
     
 
     register = ({view}) => {

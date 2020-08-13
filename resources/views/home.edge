@@ -32,15 +32,13 @@
                        
 
                     <img src="{{assetsUrl("image/no-image.jpg")}}" alt="Avatar" style="width:100%">
-                    <div class="container-text">
-                      @each(name in test )
+                    <div class="container-text"> <h3> 
+                    @each(name in test ) 
                       {{name.namepost}}
                       @endeach
-                      
-                      @each(item in subject )
-                      {{item.nameAddress}}
-                      {{item.country}}
-                      {{item.subject}}
+                      </h3><p1>
+                      @each(sub in item )
+                      {{sub.subject}}
                       @endeach
                       </div>
             </div>
