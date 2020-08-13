@@ -29,7 +29,7 @@
                 
             </div>
         <div class="page">
-                 <h4 class="text-review"> ━━━━━━━━━━━━━━━━ ความคิดเห็นอื่นๆ ━━━━━━━━━━━━━━━━ </h4>
+                 <h4 class="text-review"> ━━━━━━━━━━━━━━━━ ความคิดเห็น ━━━━━━━━━━━━━━━━ </h4>
                  <div class="container1">
                         
                         <div class="container-comment">
@@ -50,31 +50,32 @@
                               </div>
                               
                               <div class="container-comment-chat darker">
-                                <label class="right">Avatar </label>
-                                <p>Hey! I'm fine. Thanks for asking!</p>
-                                <span class="time-left">11:01</span>
+                                <label class="right"> </label>
+                                <p></p>
+                                <span class="time-left"></span>
                               </div>
                               
                               <div class="container-comment-chat">
-                                <label class="left">Avatar </label>
-                                <p>Sweet! So, what do you wanna do today?</p>
-                                <span class="time-right">11:02</span>
+                                <label class="left"> </label>
+                                <p></p>
+                                <span class="time-right"></span>
                               </div>
                               
                               <div class="container-comment-chat darker">
-                                <label class="right">Avatar </label>
-                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-                                <span class="time-left">11:05</span>
+                                <label class="right"> </label>
+                                <p></p>
+                                <span class="time-left"></span>
                               </div>
-
-
-                              <form method="POST" action="{{route('/comment')}}">  
+                              <div class="border-comment"></div>
+                              <form class="form" method="POST" action="{{route('/comment')}}">  
                                 {{ csrfField() }} 
                               <div class="submit">
-                                  <input type="text" name="comment" placeholder="comment ...">
+                                  <input class="bottom-name" type="text" name="write_post" placeholder="ชื่อของคุณ ...">
+                                  <input class="bottom-comment" type="text" name="write_post" placeholder="แสดงความคิดเห็น ...">
                                   
                                   
-                                  <input type="submit" value="Submit" >
+                                  <input class="submit" type="submit" value="ตกลง" >
+
                               </div>
                               </form>
                               
