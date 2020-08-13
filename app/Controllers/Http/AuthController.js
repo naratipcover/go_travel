@@ -38,7 +38,9 @@ class AuthController {
     async comment ({view,request,response}) {
         const test = await Database.select('namepost').from('forms')
         const item =await Database.select('*').from('forms')
-        return view.render("comment", { test,item });
+        const user =await Database.select('name').from('commentposts')
+        const com =await Database.select('*').from('commentposts')
+        return view.render("comment", { test,item,user,com });
     }
 
     register = ({view}) => {

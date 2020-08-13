@@ -35,9 +35,17 @@
                         <div class="container-comment">
 
                             <div class="container-comment-chat">
-                                <label class="left">Avatar </label>
+                                <label class="left">
+                                  @each(users in user )
+                                  {{users.name}}
+                                  @endeach
+                                </label>
                                 
-                                <p>Hello. How are you today?</p>
+                                <p>
+                                  @each(comm in com )
+                                  {{comm.comment}}
+                                  @endeach
+                                </p>
                                 <span class="time-right">11:00</span>
                               </div>
                               
