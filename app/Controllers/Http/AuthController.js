@@ -39,7 +39,7 @@ class AuthController {
         const test = await Database.select('namepost').from('forms')
         const item =await Database.select('*').from('forms')
         const user =await Database.select('name').from('commentposts')
-        const com =await Database.select('*').from('commentposts')
+        const com =await Database.select('comment').from('commentposts')
         return view.render("comment", { test,item,user,com });
     }
 
@@ -91,8 +91,10 @@ class AuthController {
 
     
 
-    post ({view,request,response}) {
-        return view.render("post");
+    async post ({view,request,response}) {
+        const test = await Database.select('*').from('forms')
+        const item =await Database.select('*').from('forms')
+        return view.render("post", { test,item });
     }
 
     regionNorthern({view,request,response}) {

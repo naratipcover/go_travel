@@ -89,8 +89,16 @@
                 <div class="card item-card">
                         <img src="{{assetsUrl("image/01.jpg")}}" alt="Avatar" style="width:100%">
                         <div class="container">
-                          <h3><b>แม่กำปองน่าเที่ยวมาก</b></h3>
-                          <p1>เป็นการไปเที่ยวด้วยการเช่ารถไปเอง ด้วยงบ 1000 บาท</p1>
+                          <h3><b>
+                            @each(name in test ) 
+                            {{name.namepost}}
+                            @endeach  
+                          </b></h3>
+                        <p1>
+                          @each(sub in item )
+                          {{sub.subject}}
+                           @endeach
+                        </p1>
                         </div></a>
                         <div class="rating">
                           <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
